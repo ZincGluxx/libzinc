@@ -1,6 +1,6 @@
-# LIBCOSMIC
+# LIBZinc
 
-A platform toolkit based on iced for creating applets and applications for the COSMIC™ desktop.
+A platform toolkit based on iced for creating applets and applications for the Zinc™ desktop.
 
 ## Documentation
 
@@ -14,15 +14,15 @@ A platform toolkit based on iced for creating applets and applications for the C
 
 ## Dependencies
 
-While libcosmic is written entirely in Rust, some of its dependencies may require shared system library headers to be installed. On Pop!_OS, the following dependencies are all that's necessary to compile a typical COSMIC project:
+While libcosmic is written entirely in Rust, some of its dependencies may require shared system library headers to be installed. On Pop!_OS, the following dependencies are all that's necessary to compile a typical Zinc project:
 
 ```sh
 sudo apt install cargo cmake just libexpat1-dev libfontconfig-dev libfreetype-dev libxkbcommon-dev pkgconf
 ```
 
-## Made-for-COSMIC Flatpak IDs
+## Made-for-Zinc Flatpak IDs
 
-To identify a project as a COSMIC Application, add `<id>com.system76.CosmicApplication</id>` to the provides section of the project's metainfo.
+To identify a project as a Zinc Application, add `<id>com.system76.ZincApplication</id>` to the provides section of the project's metainfo.
 
 ```xml
 <provides>
@@ -30,7 +30,7 @@ To identify a project as a COSMIC Application, add `<id>com.system76.CosmicAppli
 </provides>
 ```
 
-For COSMIC Applets, use `com.system76.CosmicApplet`.
+For Zinc Applets, use `com.system76.ZincApplet`.
 
 ```xml
 <provides>
@@ -40,16 +40,16 @@ For COSMIC Applets, use `com.system76.CosmicApplet`.
 
 ## Publishing
 
-> Before submission, ensure that the app or applet is not violating section 5 of the [COSMIC trademark policy](https://github.com/pop-os/cosmic-epoch/blob/master/TRADEMARK.md).
+> Before submission, ensure that the app or applet is not violating section 5 of the [Zinc trademark policy](https://github.com/ZincGluxx/zinc-desktop/blob/master/TRADEMARK.md).
 
-Applets must be submitted to the official [COSMIC Flatpak](https://github.com/pop-os/cosmic-flatpak/) repository. This repository can be added to the system through the COSMIC Store if it is not already installed by the OS.
+Applets must be submitted to the official [Zinc Flatpak](https://github.com/pop-os/cosmic-flatpak/) repository. This repository can be added to the system through the Zinc Store if it is not already installed by the OS.
 
-Applications may be submitted to [Flathub](https://docs.flathub.org/docs/for-app-authors/submission). Desktop-specific components—such as COSMIC applets—are not permitted on Flathub so make sure to submit them to the COSMIC Flatpak repository instead.
+Applications may be submitted to [Flathub](https://docs.flathub.org/docs/for-app-authors/submission). Desktop-specific components—such as Zinc applets—are not permitted on Flathub so make sure to submit them to the Zinc Flatpak repository instead.
 
 ## Examples
 
 Some examples are included in the [examples](./examples) directory to to kickstart your
-COSMIC adventure. To run them, you need to clone the repository with the following commands:
+Zinc adventure. To run them, you need to clone the repository with the following commands:
 
 ```sh
 git clone --recurse-submodules https://github.com/pop-os/libcosmic
@@ -88,13 +88,13 @@ Available cargo features to choose from:
 
 ### Project Showcase
 
-- [COSMIC App Library](https://github.com/pop-os/cosmic-applibrary)
-- [COSMIC Applets](https://github.com/pop-os/cosmic-applets)
-- [COSMIC Launcher](https://github.com/pop-os/cosmic-launcher)
-- [COSMIC Notifications](https://github.com/pop-os/cosmic-notifications)
-- [COSMIC Panel](https://github.com/pop-os/cosmic-panel)
-- [COSMIC Text Editor](https://github.com/pop-os/cosmic-text-editor)
-- [COSMIC Settings](https://github.com/pop-os/cosmic-settings)
+- [Zinc App Library](https://github.com/pop-os/cosmic-applibrary)
+- [Zinc Applets](https://github.com/ZincGluxx/zinc-applets)
+- [Zinc Launcher](https://github.com/ZincGluxx/zinc-launcher)
+- [Zinc Notifications](https://github.com/ZincGluxx/zinc-notifications)
+- [Zinc Panel](https://github.com/ZincGluxx/zinc-panel)
+- [Zinc Text Editor](https://github.com/ZincGluxx/zinc-text-editor)
+- [Zinc Settings](https://github.com/ZincGluxx/zinc-settings)
 
 ## Licence
 
